@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RedSea Honey</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="#" class="navbar-logo">Redsea<span>Honey</span></a>
+      <div class="navbar-nav">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#product">Produk</a>
+        <a href="#preorder">Kontak Kami</a>
+      </div>
+      <div class="navbar-extra">
+        <!-- <a href="#" id="search"><i data-feather="search"></i></a> -->
+        <!-- <a href="#product" id="box"><i data-feather="box"></i></a> -->
+        <a href="#" id="menu"><i data-feather="menu"></i></a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <main class="content">
+        <div class="text">
+          <h1>Madu Premium, Kualitas Terjamin <span>Redsea Honey</span></h1>
+          <p>
+            Redsea Honey menghadirkan madu asli Yaman dengan kualitas premium,
+            rasa yang kaya, dan khasiat alami untuk kesehatan tubuh Anda. Produk
+            telah terdaftar di BPOM, sehingga aman dan terpercaya untuk
+            dikonsumsi setiap hari.
+          </p>
+          <!-- <a href="#preorder" class="cta">Pesan Sekarang</a> -->
+        </div>
+        <div class="image">
+          <img src="img/header.jpg" alt="gambar" class="imgbg" />
+        </div>
+      </main>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+      <h2><span>Tentang</span> Kami</h2>
+      <div class="row">
+        <div class="about-img">
+          <img src="img/tentang-kami.jpg" alt="tentang kami" />
+        </div>
+        <div class="content">
+          <h3>Kenapa memilih Madu kami?</h3>
+          <p>
+            Redsea Honey adalah brand madu premium yang menghadirkan langsung
+            madu asli dari Yaman—negara yang dikenal dengan kualitas madunya
+            yang luar biasa. Kami berkomitmen untuk menyediakan madu murni tanpa
+            campuran, kaya akan manfaat, dan diproses secara higienis untuk
+            menjaga kemurniannya. Produk kami telah terdaftar secara resmi di
+            BPOM, sehingga terjamin keamanannya untuk dikonsumsi oleh seluruh
+            anggota keluarga.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Product -->
+    <section id="product" class="product">
+      <h2><span>Produk</span> Kami</h2>
+      <p>
+        Berikut adalah beberapa produk kami yang dijual dengan sistem pre-order
+        dan telah terdaftar di BPOM.
+      </p>
+      <div class="row">
+        <div class="menu-card">
+          <img
+            src="img/menu/menu1.jpg"
+            alt="madu marai"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Madu Marai</h3>
+          <p class="menu-card-price">IDR.100.000/300gr</p>
+          <button onclick="kirimWA('Madu Marai', '300gr')" class="btp">
+            Preorder
+          </button>
+          <button class="khasiat-btn" onclick="tampilKhasiat('marai')">
+            Khasiat
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/menu/menu1.jpg"
+            alt="madu sumrah"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Madu Sumrah</h3>
+          <p class="menu-card-price">IDR.200.000/300gr</p>
+          <button onclick="kirimWA('Madu Sumrah', '300gr')" class="btp">
+            Preorder
+          </button>
+          <button class="khasiat-btn" onclick="tampilKhasiat('sumrah')">
+            Khasiat
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img src="img/menu/menu1.jpg" alt="madu sidr" class="menu-card-img" />
+          <h3 class="menu-card-title">- Madu Sidr</h3>
+          <p class="menu-card-price">IDR.500.000/300gr</p>
+
+          <button onclick="kirimWA('Madu Sidr', '300gr')" class="btp">
+            Preorder
+          </button>
+          <button class="khasiat-btn" onclick="tampilKhasiat('sidr')">
+            Khasiat
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/menu/menu1.jpg"
+            alt="madu malaki"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Madu Malaki</h3>
+          <p class="menu-card-price">IDR.1.000.000/300gr</p>
+          <button onclick="kirimWA('Madu Malaki', '300gr')" class="btp">
+            Preorder
+          </button>
+          <button class="khasiat-btn" onclick="tampilKhasiat('malaki')">
+            Khasiat
+          </button>
+        </div>
+
+        <div class="menu-card">
+          <img
+            src="img/menu/menu1.jpg"
+            alt="madu bride"
+            class="menu-card-img"
+          />
+          <h3 class="menu-card-title">- Madu Bride</h3>
+          <p class="menu-card-price">IDR.215.000/300gr</p>
+          <button onclick="kirimWA('Madu Bride', '300gr')" class="btp">
+            Preorder
+          </button>
+          <button class="khasiat-btn" onclick="tampilKhasiat('bride')">
+            Khasiat
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="preorder" class="contact">
+      <h2><span>Kontak</span> Kami</h2>
+      <p>
+        Kami siap melayani pertanyaan, pemesanan, atau kerja sama bisnis Anda.
+        Hubungi kami langsung melalui kontak berikut.
+      </p>
+      <div class="row">
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d991.5053162736284!2d106.82542556966922!3d-6.260928966502069!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f22c57396201%3A0x21e08bf387c060f1!2sJl.%20Kemang%20Tim.%20V%20No.3%2C%20RT.2%2FRW.2%2C%20Duren%20Tiga%2C%20Kec.%20Pancoran%2C%20Kota%20Jakarta%20Selatan%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2012760!5e0!3m2!1sid!2sid!4v1753869460156!5m2!1sid!2sid"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+        <form action="" id="waform">
+          <div class="input-group">
+            <i data-feather="user"></i>
+            <input type="text" placeholder="Nama" id="nama" />
+          </div>
+          <div class="input-group">
+            <i data-feather="mail"></i>
+            <input type="text" placeholder="Email" id="email" />
+          </div>
+          <div class="input-group">
+            <i data-feather="phone"></i>
+            <input type="text" placeholder="No. HP" id="nohp" />
+          </div>
+          <button type="submit" class="btn-kirim">Contact Us</button>
+        </form>
+      </div>
+    </section>
+    <script>
+      document
+        .getElementById("waform")
+        .addEventListener("submit", function (e) {
+          e.preventDefault(); // Mencegah reload form
+
+          // Ambil data dari form
+          const nama = document.getElementById("nama").value;
+          const email = document.getElementById("email").value;
+          const nohp = document.getElementById("nohp").value;
+
+          // Ganti nomor WhatsApp tujuan kamu di sini (tanpa tanda +)
+          const noTujuan = "6281292323731";
+
+          // Format pesan
+          const pesan = `Halo, saya ${nama}\nEmail: ${email}\nNo HP: ${nohp}\nSaya ingin bertanya mengenai produk Anda.`;
+
+          // Buka WhatsApp
+          const url = `https://api.whatsapp.com/send?phone=${noTujuan}&text=${encodeURIComponent(
+            pesan
+          )}`;
+          window.open(url, "_blank");
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+      <div class="socials">
+        <a href="https://instagram.com/segafmc"
+          ><i data-feather="instagram"></i
+        ></a>
+        <a href="https://wa.me/6281292323731"><i class="fa fa-whatsapp"></i></a>
+        <a href="#"><i data-feather="facebook"></i></a>
+        <a href="https://www.tiktok.com/@redseahoney1"
+          ><i class="fa fa-tiktok"></i
+        ></a>
+      </div>
+      <div class="links">
+        <a href="#home">Home</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#product">Produk</a>
+        <a href="#preorder">Preorder</a>
+      </div>
+      <div class="credit">
+        <p>Created by <a href="#">Segaf</a> | &copy; 2025</p>
+      </div>
+    </footer>
+
+    <!-- Feather Icon -->
+    <script>
+      feather.replace();
+    </script>
+
+    <!-- WhatsApp Button Script -->
+    <script>
+      function kirimWA(namaProduk, berat) {
+        const nomor = "6281292323731";
+        const pesan = `Halo, saya ingin preorder ${namaProduk} (${berat}) segera.`;
+        const url = `https://wa.me/${nomor}?text=${encodeURIComponent(pesan)}`;
+        window.open(url, "_blank");
+      }
+    </script>
+    <script>
+      const menu = document.querySelector("#menu");
+      const navbarNav = document.querySelector(".navbar-nav");
+
+      menu.addEventListener("click", function () {
+        navbarNav.classList.toggle("active");
+      });
+
+      // Optional: klik di luar navbar untuk menutupnya
+      document.addEventListener("click", function (e) {
+        if (!menu.contains(e.target) && !navbarNav.contains(e.target)) {
+          navbarNav.classList.remove("active");
+        }
+      });
+    </script>
+    <div class="khasiat-popup" id="popup-khasiat">
+      <div class="khasiat-content">
+        <span class="close-btn" onclick="tutupKhasiat()">&times;</span>
+        <h3>Khasiat Madu</h3>
+        <p id="isi-khasiat">Loading...</p>
+      </div>
+    </div>
+    <script>
+      function tampilKhasiat(jenis) {
+        const popup = document.getElementById("popup-khasiat");
+        const isi = document.getElementById("isi-khasiat");
+
+        const dataKhasiat = {
+          marai:
+            "Madu Marai baik untuk menjaga daya tahan tubuh dan mengatasi radang.",
+          sumrah:
+            "Madu Sumrah bermanfaat untuk meningkatkan energi dan metabolisme.",
+          sidr: "Madu Sidr kaya akan antioksidan, bagus untuk pencernaan dan jantung.",
+          malaki:
+            "Madu Malaki berfungsi sebagai anti-inflamasi dan meningkatkan vitalitas.",
+          bride:
+            "Madu Bride dapat membantu meningkatkan kesuburan dan imunitas.",
+        };
+
+        isi.textContent = dataKhasiat[jenis] || "Informasi belum tersedia.";
+        popup.style.display = "block";
+      }
+
+      function tutupKhasiat() {
+        document.getElementById("popup-khasiat").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
